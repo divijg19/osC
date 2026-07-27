@@ -19,4 +19,5 @@ void *reader(void *r) {
   if (readcount == 0)
     sem_post(&wrt);
   sem_post(&mutex);
+  return 0;
 }
