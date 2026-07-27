@@ -21,6 +21,7 @@ void *producer(void *p) {
     sem_post(&mutex);
     sem_post(&full);
   }
+  return 0;
 }
 
 void *consumer(void *c) {
@@ -36,4 +37,5 @@ void *consumer(void *c) {
     sem_post(&mutex);
     sem_post(&empty);
   }
+  return 0;
 }

@@ -15,4 +15,5 @@ void *philosopher(void *num) {
 
   sem_post(&chopstick[i]);
   sem_post(&chopstick[(i + 1) % N]);
+  return 0;
 }
